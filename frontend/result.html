@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>計算結果</title>
+</head>
+<body>
+  <h1 id="result">計算結果を読み込み中…</h1>
+
+  <script>
+    // URL の ?sum=8 のような値を取得する
+    const params = new URLSearchParams(window.location.search);
+    const sum = params.get("sum");
+
+    document.getElementById("result").textContent = "計算結果: " + sum;
+  </script>
+</body>
+</html>
