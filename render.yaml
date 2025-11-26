@@ -4,7 +4,7 @@ services:
     env: node
     plan: free
     region: oregon
-    buildCommand: "./mvnw clean package"
+    buildCommand: "mvn clean package"
     startCommand: "java -jar target/practice_web-0.0.1-SNAPSHOT.jar"
     envVars:
       - key: JAVA_VERSION
