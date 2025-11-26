@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: practice-web
+    name: practice_web
     env: java
     plan: free
     region: oregon
