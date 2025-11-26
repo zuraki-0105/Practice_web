@@ -2,7 +2,7 @@ function sendNumbers() {
   const a = document.getElementById("a").value;
   const b = document.getElementById("b").value;
 
-  fetch("http://localhost:8080/api/plus?a=" + a + "&b=" + b)
+  fetch("/api/plus?a=" + encodeURIComponent(a) + "&b=" + encodeURIComponent(b))
     .then(response => response.json())
     .then(data => {
       const sum = data.sum;
